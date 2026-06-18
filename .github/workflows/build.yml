@@ -31,3 +31,7 @@ jobs:
     - name: Ejecutar pruebas unitarias con Pytest
       run: |
         pytest test_calculadora.py
+
+    - name: Análisis de calidad de código con Pylint
+      run: |
+        pylint calculadora.py --fail-under=8.0
