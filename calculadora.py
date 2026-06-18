@@ -1,12 +1,14 @@
 """
-Pruebas unitarias para el módulo calculadora.
+Módulo de calculadora básica para demostrar flujos de CI.
 """
-from calculadora import suma, resta
 
-def test_suma():
-    """Valida que la suma funcione correctamente."""
-    assert suma(5, 3) == 8  # <--- Corregido: cambiamos 99 de vuelta a 8
+def suma(a, b):
+    """Retorna la suma de dos números."""
+    return a + b
 
-def test_resta():
-    """Valida que la resta funcione correctamente."""
-    assert resta(10, 4) == 6
+def resta(a, b):
+    """Retorna la resta de dos números."""
+    return a - b
+
+if __name__ == "__main__":
+    print(f"Suma de 5 + 3 = {suma(5, 3)}")
