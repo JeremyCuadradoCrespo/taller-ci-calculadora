@@ -27,3 +27,7 @@ jobs:
     - name: Ejecutar Script (Build inicial)
       run: |
         python calculadora.py
+
+    - name: Ejecutar pruebas unitarias con Pytest
+      run: |
+        pytest test_calculadora.py
